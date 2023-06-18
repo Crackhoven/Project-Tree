@@ -1,0 +1,68 @@
+-- admin functions
+    -- edit/delete users/invitations/connections
+-- forms and validation
+-- error pages and redirects
+
+-- optional: delete user
+-- optional: how is messaging / gonna work
+-- optional: forgot password inside login page
+
+-- homepage
+    -- footer
+    -- public navbar
+        -- logo
+        -- login
+        -- browse
+        -- register
+    -- mentee navbar
+        -- browse
+        -- edit profile
+    -- mentor navbar
+        -- my mentees
+        -- edit profile
+    -- landing page (only visible for not logged in users)
+        -- searchbar for finding mentors
+        -- popular skills tabs uses the search page
+        -- text to fill up the page: about, goals, whatever sounds cool
+    -- search page
+        -- searches only one skill at a time
+        -- displays all mentors with searched skill
+            -- some details like name, email, etc.
+            -- display 3-5 skills
+            -- display ratings (stars and average rating)
+            -- link to the public profile
+    -- public profile page [BE: partly done]
+        -- [BE: DONE] display all details
+        -- [BE: DONE] reviews
+        -- display all skills [BE: partly done]
+            -- clickable and takes you to the search page of the skill
+        -- display social media [BE: partly done]
+            -- icons clickable
+        -- apply as mentee [BE: DONE]
+            -- display pending/connected or apply based on relationship and application
+        -- optional: display random mentors with same skill(s)
+    -- admin dashboard
+        -- todo
+    -- user dashboard
+        -- [BE: DONE] show your mentor/mentee
+        -- [BE: PARTLY DONE] show all applications
+        -- show relationships
+    -- edit/update page
+        -- edit social media
+        -- edit skills
+    -- [BE: done] password change
+    -- password reset
+        -- do we really need it for this project?
+    -- register 
+         -- select skills
+         -- social media
+         -- steps registration
+            -- https://www.w3schools.com/howto/howto_js_form_steps.asp
+         -- multiselect
+            -- https://codingspoint.com/multi-select-autocomplete-jquery-example-with-code/
+            -- https://coreui.io/docs/forms/multi-select/
+    -- login page
+        -- link to password reset page
+-- other
+    -- logging
+    -- put stuff into functions

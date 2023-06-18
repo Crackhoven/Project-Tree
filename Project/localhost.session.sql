@@ -1,0 +1,1 @@
+SELECT * from skills join user_skills on skills.id = fk_skill_id join users on users.id = user_skills.fk_user_id join mentors on users.id = mentors.fk_user_id where name = "PHP";

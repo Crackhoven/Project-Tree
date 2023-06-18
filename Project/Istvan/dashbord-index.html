@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashbord-index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand " href="/">
+            <img src="img/fa.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            mentor tree
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+        <!-- Mentors -->
+   <section class="p-5"> 
+    <h1 class="mentor-title p-3">Featured Mentors</h1>
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide w-75 mx-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+           <div class="card mx-auto mb-5" style="max-width: 70%;">
+            <div class="row g-0">
+                <div class="col-md-3 p-2">
+                    <img src="img/15.jpg" class="img-fluid rounded-start" alt="...">
+                    <p class="card-text p-2"><small class="text-muted">Last online 3 mins ago</small></p>
+                </div>
+                <div class="col-md-6 p-2">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Jane Doe</strong></h5>
+                        <p class="card-text">Impressive Job Title at <strong>Google</strong></p>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" data-rating="1"></i>
+                            <i class="fa-solid fa-star" data-rating="2"></i>
+                            <i class="fa-solid fa-star" data-rating="3"></i>
+                            <i class="fa-solid fa-star" data-rating="4"></i>
+                            <i class="fa-solid fa-star" data-rating="5"></i>
+                             <i class="fa-solid fa-star-half"></i> 
+                             <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <hr>
+                        <i class="fa-solid fa-comment-dots ms-1 me-1"></i><span>Chat</span>
+                        <i class="fa-solid fa-phone ms-1 me-1"></i><span>4 x Month</span>
+                        <i class="fa-solid fa-bolt-lightning ms-1 me-1"></i><span>Fast Responder</span> 
+                         <hr> 
+                        <p class="card-text">A wonderful serenity has taken possession of my entire soul, like these
+                            sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm
+                            of existence in this spot, which was created for the bliss of souls like mine. </p>
+                        <hr>
+                        <div class="skills">
+                            <span class="skill">Computer Science</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">C#</span>
+                            <span class="skill">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="card-body">
+                        <h7 class="card-text">What can you expect from this mentor?</h7>
+                        <hr>
+                        <p class="card-text small">Unlimited chat and email responses.</p>
+                        <hr>
+                        <p class="card-text small">Up to four calls per month.</p>
+                        <hr>
+                        <button type="button" class="btn btn-light btn-lg">View Profile</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        
+        </div>
+        <div class="carousel-item ">
+       <div class="card mx-auto mb-5" style="max-width: 70%;">
+        <div class="row g-0">
+            <div class="col-md-3 p-2">
+                <img src="img/14.jpg" class="img-fluid rounded-start" alt="...">
+                <p class="card-text p-2"><small class="text-muted">Last online 3 mins ago</small></p>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Jane Doe</strong></h5>
+                    <p class="card-text">Data Scientist at <strong>HP INC</strong></p>
+
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star" data-rating="1"></i>
+                        <i class="fa-solid fa-star" data-rating="2"></i>
+                        <i class="fa-solid fa-star" data-rating="3"></i>
+                        <i class="fa-solid fa-star" data-rating="4"></i>
+                        <i class="fa-solid fa-star" data-rating="5"></i>
+                         <i class="fa-solid fa-star-half"></i> 
+                         <i class="fa-regular fa-star"></i> 
+                    </div>
+                    <hr>
+                    <i class="fa-solid fa-comment-dots ms-1 me-1"></i><span>Chat</span>
+                    <i class="fa-solid fa-phone ms-1 me-1"></i><span>4 x Month</span>
+                    <i class="fa-solid fa-bolt-lightning ms-1 me-1"></i><span>Fast Responder</span> 
+                     <hr> 
+                    <p class="card-text">I am an action-oriented data analyst with more than 10 years of experience in quantitative analysis and reporting, project management and applications design and development in technology and ecommerce fields. Highly skilled in requirements gathering, process mapping, optimization and automation, systems design, systems implementation and integration, data analysis and migration. …</p>
+                    <hr>
+                    <div class="skills">
+                        <span class="skill">Computer Science</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">C#</span>
+                        <span class="skill">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-2">
+                <div class="card-body">
+                    <h7 class="card-text">What can you expect from this mentor?</h7>
+                    <hr>
+                    <p class="card-text small">Unlimited chat and email responses.</p>
+                    <hr>
+                    <p class="card-text small">Up to four calls per month.</p>
+                    <hr>
+                    <button type="button" class="btn btn-light btn-lg">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+    <div class="carousel-item ">
+     <div class="card mx-auto mb-5" style="max-width: 70%;">
+      <div class="row g-0">
+          <div class="col-md-3 p-2">
+              <img src="img/13.jpg" class="img-fluid rounded-start" alt="...">
+              <p class="card-text p-2"><small class="text-muted">Last online 3 mins ago</small></p>
+          </div>
+          <div class="col-md-6 p-2">
+              <div class="card-body">
+                  <h5 class="card-title"><strong>Jane Doe</strong></h5>
+                  <p class="card-text">Senior Design Manager at <strong> Microsoft</strong></p>
+                  <div class="star-rating">
+                      <i class="fa-solid fa-star" data-rating="1"></i>
+                      <i class="fa-solid fa-star" data-rating="2"></i>
+                      <i class="fa-solid fa-star" data-rating="3"></i>
+                      <i class="fa-solid fa-star" data-rating="4"></i>
+                      <i class="fa-solid fa-star" data-rating="5"></i>
+                       <i class="fa-solid fa-star-half"></i> 
+                       <i class="fa-regular fa-star"></i>
+                  </div>
+                  <hr>
+                  <i class="fa-solid fa-comment-dots ms-1 me-1"></i><span>Chat</span>
+                  <i class="fa-solid fa-phone ms-1 me-1"></i><span>4 x Month</span>
+                  <i class="fa-solid fa-bolt-lightning ms-1 me-1"></i><span>Fast Responder</span> 
+                   <hr> 
+                  <p class="card-text">Juliette Weiss is a Senior Design Manager at Microsoft that has a proven track record at bringing version-0 products to life. As Head of Design of what is now known as Willie’s Superbrew, she helped launch and secure initial funding for the hard seltzer brand. From there, Juliette joined Microsoft …</p>
+                  <hr>
+                  <div class="skills">
+                      <span class="skill">Computer Science</span>
+                      <span class="skill">JavaScript</span>
+                      <span class="skill">C#</span>
+                      <span class="skill">Machine Learning</span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 p-2">
+              <div class="card-body">
+                  <h7 class="card-text">What can you expect from this mentor?</h7>
+                  <hr>
+                  <p class="card-text small">Unlimited chat and email responses.</p>
+                  <hr>
+                  <p class="card-text small">Up to four calls per month.</p>
+                  <hr>
+                  <button type="button" class="btn btn-light btn-lg">View Profile</button>
+              </div>
+          </div>
+      </div>
+  </div> 
+  </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<h1 class="p-3 applications-title">Active Applications</h1>
+</section> 
+    <!-- Applications -->
+
+<section class="mentor-search text-light">
+  
+  <div class="overlay"></div>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>You don't have a mentor</h2>
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Similique deleniti possimus magnam corporis ratione facere!
+          </p>
+          <br>
+          <div class="login-btn">
+            <a href="#" class="btn-main">Browse mentor</a>
+        </div>
+        </div>
+        <div class="col-md" >
+          <img src="img/23.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!-- blogs -->
+<section id="blogs" class="p-5">
+  <h1 class="p-3 blogs-title">Blogs</h1>
+  <div class="container">
+      <div class="row">
+          <div class="col-12 about text-center">
+          <div class="divider"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias a provident dolores, tempore sunt nihil! Ex aliquid deleniti expedita iure? Fugit eaque iste vero facere nam nihil error, maiores vel qui numquam aperiam adipisci quidem quasi dignissimos, tempora obcaecati. Dicta, illo laborum dolore temporibus, non corrupti et minima amet ipsa alias laudantium consequuntur, aspernatur modi!</p>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="service">
+              <div class="service-img">
+                  <img src="img/18.jpg" alt="student" class="img-fluid p-3">
+                  <div class="icon"><i class="bi bi-compass"></i></div>
+              </div>
+              <div class="p-5">
+                <h4>Find your mentor</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+                </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+            <div class="service-img">
+                <img src="img/19.jpg" alt="student" class="img-fluid p-3">
+                <div class="icon"><i class="bi bi-compass"></i></div>
+            </div>
+            <div class="p-5">
+            <h4>Find your student</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="service">
+            <div class="service-img">
+                <img src="img/20.jpg" alt="student" class="img-fluid p-3">
+                <div class="icon"><i class="bi bi-compass"></i></div>
+            </div>
+            <div class="p-5">
+                <h4>Find your path</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+                </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+        <div class="service">
+            <div class="service-img">
+                <img src="img/21.jpg" alt="student" class="img-fluid p-3">
+                <div class="icon"><i class="bi bi-compass"></i></div>
+            </div>
+            <div class="p-5">
+              <h4>Find your mentor</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service">
+          <div class="service-img">
+              <img src="img/22.jpg" alt="student" class="img-fluid p-3">
+              <div class="icon"><i class="bi bi-compass"></i></div>
+          </div>
+          <div class="p-5">
+          <h4>Find your student</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+      <div class="service">
+          <div class="service-img">
+              <img src="img/17.jpg" alt="student" class="img-fluid p-3">
+              <div class="icon"><i class="bi bi-compass"></i></div>
+          </div>
+          <div class="p-5">
+              <h4>Find your path</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore dolorem veniam! Neque quas dicta laborum dolorem quos a id!</p>
+              </div>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Alpha</h4>
+        <ul>
+          <li><a href="">alma</a></li>
+          <li><a href="">barack</a></li>
+          <li><a href="">eper</a></li>
+          <li><a href="">k0rte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+       <h4>Beta</h4>
+       <ul>
+         <li><a href="">alma</a></li>
+         <li><a href="">barack</a></li>
+         <li><a href="">eper</a></li>
+         <li><a href="">k0rte</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Gamma</h4>
+       <ul>
+         <li><a href="">alma</a></li>
+         <li><a href="">barack</a></li>
+         <li><a href="">eper</a></li>
+         <li><a href="">k0rte</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Follow Us</h4>
+       <div class="social-links">
+         <a href=""><i class="bi bi-twitter icon"></i></a>
+         <a href=""><i class="bi bi-google icon"></i></a>
+         <a href=""><i class="bi bi-instagram icon"></i></a>
+         <a href=""><i class="bi bi-facebook icon"></i></a>
+       </div>
+     </div>
+    </div>
+  </div>
+</footer>     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
